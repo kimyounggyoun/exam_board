@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>게시글 상세 페이지</title>
+</head>
+<body>
+<h3 th:text="${board.title}"></h3>
+<div th:text="${board.content}"></div>
+<!--<div th:if="${board.filename != null}">-->
+<!--    <img th:src="@{image/{fileName}(fileName=${board.filename})}"/>-->
+<!--</div>-->
+<!--<div th:if="${board.filename == null}">-->
+<!--    No image-->
+<!--</div>-->
+
+<!--<div>-->
+<!--    <a th:href="@{image/{fileName}(fileName=${board.filename})}">이미지확인</a>-->
+<!--</div>-->
+<!--<a th:href="@{/board/delete(id=${board.id})}">삭제</a>-->
+<!--<a th:href="@{/board/update/{id}(id=${board.id})}">수정</a>-->
+</body>
+</html>
